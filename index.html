@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luna Bistro • Modern Restaurant</title>
+  <meta name="description" content="Modern restaurant landing page with bilingual support (EN/AR), responsive menu, and reservation form." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="container header">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <h1 class="brand-title">Luna Bistro</h1>
+    </div>
+    <nav class="top-actions">
+      <div class="lang-switch" aria-label="Language switch">
+        <button data-lang="en" class="active" aria-pressed="true">EN</button>
+        <button data-lang="ar" aria-pressed="false">العربية</button>
+      </div>
+      <a href="#reserve" class="btn primary" data-i18n="reserveTop">Reserve</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner card">
+      <div class="hero-copy">
+        <span class="kicker" data-i18n="kicker">Modern Kitchen • Fresh Daily</span>
+        <h2 class="hero-title" data-i18n="heroTitle">Crafted cuisine with a warm vibe</h2>
+        <p class="lead" data-i18n="heroLead">
+          Seasonal ingredients, hand-made plates, and friendly service. Book a table or order for pickup.
+        </p>
+        <div class="cta">
+          <a href="#menu" class="btn primary" data-i18n="viewMenu">View Menu</a>
+          <a href="#reserve" class="btn ghost" data-i18n="bookTable">Book a Table</a>
+        </div>
+      </div>
+      <div class="hero-media" aria-hidden="true">
+        <img src="images/interior.jpg" alt="Luna Bistro interior view" class="hero-img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="container grid-3">
+    <div class="highlight card">
+      <span class="icon">🥗</span>
+      <h3 data-i18n="h1">Fresh & seasonal</h3>
+      <p class="muted" data-i18n="h1d">We update our menu every week based on local produce.</p>
+    </div>
+    <div class="highlight card">
+      <span class="icon">🔥</span>
+      <h3 data-i18n="h2">Wood-fired flavors</h3>
+      <p class="muted" data-i18n="h2d">Signature mains from our wood oven with a light smoky touch.</p>
+    </div>
+    <div class="highlight card">
+      <span class="icon">☕</span>
+      <h3 data-i18n="h3">Coffee & desserts</h3>
+      <p class="muted" data-i18n="h3d">House tiramisu, pistachio cake, and specialty coffee.</p>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="container">
+    <div class="menu-head">
+      <h2 data-i18n="menuTitle">Our Menu</h2>
+      <div class="filters" role="tablist">
+        <button class="filter active" data-filter="all" aria-selected="true" data-i18n="fAll">All</button>
+        <button class="filter" data-filter="starters" data-i18n="fStarters">Starters</button>
+        <button class="filter" data-filter="mains" data-i18n="fMains">Mains</button>
+        <button class="filter" data-filter="desserts" data-i18n="fDesserts">Desserts</button>
+      </div>
+    </div>
+
+    <div class="menu-grid">
+      <!-- Starters -->
+      <article class="dish card starters">
+        <img src="images/burrata.jpg" alt="Burrata Salad" class="dish-img">
+        <div class="dish-top">
+          <h3 data-i18n="d1t">Burrata Salad</h3><span class="price">$12</span>
+        </div>
+        <p class="muted" data-i18n="d1d">Creamy burrata, cherry tomatoes, basil oil.</p>
+      </article>
+
+      <article class="dish card starters">
+        <img src="images/lentil-soup.jpg" alt="Lentil Soup" class="dish-img">
+        <div class="dish-top">
+          <h3 data-i18n="d2t">Lentil Soup</h3><span class="price">$8</span>
+        </div>
+        <p class="muted" data-i18n="d2d">Comforting red lentils with lemon & cumin.</p>
+      </article>
+
+      <!-- Mains -->
+      <article class="dish card mains">
+        <img src="images/wood-fried-chicken.jpg" alt="Wood-Fired Chicken" class="dish-img">
+        <div class="dish-top">
+          <h3 data-i18n="d3t">Wood-Fired Chicken</h3><span class="price">$18</span>
+        </div>
+        <p class="muted" data-i18n="d3d">Herb marinated, roasted vegetables, garlic sauce.</p>
+      </article>
+
+      <article class="dish card mains">
+        <img src="images/pistachio-pasta.jpg" alt="Pistachio Pesto Pasta" class="dish-img">
+        <div class="dish-top">
+          <h3 data-i18n="d4t">Pistachio Pesto Pasta</h3><span class="price">$16</span>
+        </div>
+        <p class="muted" data-i18n="d4d">Fresh pasta with pistachio-basil pesto & parmesan.</p>
+      </article>
+
+      <!-- Desserts -->
+      <article class="dish card desserts">
+        <img src="images/tiramisu.jpg" alt="Tiramisu" class="dish-img">
+        <div class="dish-top">
+          <h3 data-i18n="d5t">Tiramisu</h3><span class="price">$9</span>
+        </div>
+        <p class="muted" data-i18n="d5d">Classic Italian pick-me-up with mascarpone.</p>
+      </article>
+
+      <article class="dish card desserts">
+        <img src="images/pistachio-cake.jpg" alt="Pistachio Cake" class="dish-img">
+        <div class="dish-top">
+          <h3 data-i18n="d6t">Pistachio Cake</h3><span class="price">$9</span>
+        </div>
+        <p class="muted" data-i18n="d6d">Moist nutty cake with cardamom cream.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="container grid-2">
+    <div class="card quote">
+      <p data-i18n="q1">“Absolutely delicious! The wood-oven mains are a must.”</p>
+      <span class="muted" data-i18n="q1By">— Amina K.</span>
+    </div>
+    <div class="card quote">
+      <p data-i18n="q2">“Cozy place, great coffee, and desserts to die for.”</p>
+      <span class="muted" data-i18n="q2By">— Daniel R.</span>
+    </div>
+  </section>
+
+  <!-- Reservation -->
+  <section id="reserve" class="container card reserve">
+    <div>
+      <h2 data-i18n="reserveTitle">Reserve a Table</h2>
+      <p class="muted" data-i18n="reserveLead">Open daily • 12:00 pm – 11:00 pm • Downtown</p>
+      <form class="res-form" onsubmit="event.preventDefault(); alert('Thanks! This is a demo.');">
+        <input type="text" placeholder="Name" required data-i18n-ph="phName">
+        <input type="tel" placeholder="Phone" required data-i18n-ph="phPhone">
+        <input type="date" required>
+        <input type="time" required>
+        <button class="btn primary" type="submit" data-i18n="btnReserve">Confirm Reservation</button>
+      </form>
+    </div>
+    <div class="map">
+      <img src="images/interior.jpg" alt="Restaurant interior" class="map-img">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container footer">
+    <small>&copy; <span id="y"></span> Luna Bistro – All rights reserved.</small>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
+
