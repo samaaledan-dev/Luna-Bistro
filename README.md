@@ -35,3 +35,9 @@ cd Luna-Bistro
 # open directly in your browser
 open index.html #macOS
 start index.html #Windows
+
+## 📸 Screenshots
+![Hero section](screenshots/Luna-Bistro.png)
+![Menu section](screenshots/Menu.png)
+![Reservation form](screenshots/Reservation.png)
+
