@@ -22,6 +22,12 @@ Modern **bilingual (EN/AR)** restaurant landing page with a clean UI, responsive
   - CSS3 (responsive, grid/flex, subtle shadows)
   - Vanilla JavaScript (i18n + filtering)
 
+---
+
+## 📸 Screenshots
+![Hero section](screenshots/Luna-Bistro.png)
+![Menu section](screenshots/Menu.png)
+![Reservation form](screenshots/Reservation.png)
 
 ---
 
@@ -36,8 +42,5 @@ cd Luna-Bistro
 open index.html #macOS
 start index.html #Windows
 
-## 📸 Screenshots
-![Hero section](screenshots/Luna-Bistro.png)
-![Menu section](screenshots/Menu.png)
-![Reservation form](screenshots/Reservation.png)
+
 
